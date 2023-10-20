@@ -1,0 +1,332 @@
+/*----
+ PLANO 
+ ----*/
+
+.plano {
+    position: relative;
+
+    border: 1px solid #95a4a5;
+    padding: 0;
+    padding-bottom: 10px;
+
+    font-size: 1.4rem;
+}
+
+.plano--mais-popular::after {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    padding: 0 10px;
+
+    background-color: #c20303;
+    color: #fff;
+
+    font-size: 0.7142em;
+    line-height: 2.5;
+
+    content: "MAIS POPULAR";
+}
+
+.plano__cabecalho {
+    background-color: #95a4a5;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5;
+    margin: 0;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.plano__preco {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px auto;
+}
+
+.plano__caracteristicas {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.plano__caracteristicas > li {
+    text-align: center;
+}
+
+.plano__rodape {
+    text-align: center;
+}
+
+/*----
+ BOTÃO
+ ----*/
+
+.button {
+    display: inline-block;
+
+    background-color: #127000;
+    color: whitesmoke;
+
+    padding: 0.8em 1.2em;
+
+    text-decoration: none;
+    line-height: normal;
+    border: none;
+}
+
+.button:hover,
+.button:focus-visible {
+    background-color: darkred;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button--assinar, .button--login{
+    background-color: #127d00;
+}
+
+.button--assinar:hover, .button--login:hover,
+.button--assinar:focus-visible, .button--login:focus-visible {
+    background-color: #0e6400;
+}
+
+.button--principal {
+    border-radius: 100vmax;
+
+    background-color: #004b86;
+}
+
+.button--principal:hover,
+.button--principal:focus-visible {
+    background-color: #003b6a;
+}
+
+/*-----------
+CHAMADA
+-------------*/
+
+.chamada {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.chamada__titulo {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 3.375em;
+    line-height: 0.9;
+    text-shadow: 2px 2px #313131;
+}
+
+.chamada__subtitulo {
+    margin: 60px 0;
+
+    color: #fff;
+
+    font-size: 1em;
+}
+
+.chamada__acao {
+    font-size: 1em;
+}
+
+@media (min-width: 992px) {
+    .chamada {
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 2.2rem;
+    }
+}
+
+/*-----------
+DEPOIMENTO
+-------------*/
+
+.depoimento {
+    
+    font-size: 2.2rem;
+}
+
+@media(min-width: 992px) {
+    .depoimento {
+        padding-left: 15%;
+        padding-right: 15%;
+
+        font-size: 2.8rem;
+    }
+}
+
+.depoimento > blockquote {
+    position: relative;
+
+    margin: 0;
+    padding: 0 60px;
+
+    text-align: center;
+    font-size: 1em;
+}
+
+.depoimento > blockquote::before{
+    position: absolute;
+    left: 0.05em;
+    top: -0.4em;
+
+    color: #ccc;
+
+    font-size: 7em;
+
+    content: "\201C"
+}
+
+.depoimento__autor {
+    margin-top: 40px;
+
+    text-align: center;
+
+    font-size: 0.72em;
+}
+
+.depoimento__autor > img {
+    border-radius: 50%;
+}
+
+.depoimento__autor > p {
+    margin-top: 10px;
+}
+
+/*-----------
+NAVEGACAO
+-------------*/
+
+.navegacao {
+
+}
+
+.navegacao--assinatura {
+    text-align: center;
+  }
+
+.navegacao__menu {
+    float: right;
+}
+
+/*-----------
+BOTAO CHAVEADOR
+-------------*/
+
+.button-chaveador {
+    border: 0;
+
+    background: none;
+
+    outline: none;
+}
+
+.button-chaveador > img {
+    width: 40px;
+    height: 40px;
+}
+
+@media(min-width: 992px) {
+    .button-chaveador {
+        display: none;
+    }
+}
+
+/*-----------
+MENU
+-------------*/
+
+.menu {
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    list-style: none;
+}
+
+@media(max-width: 991px){
+    .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+    width: 200px;
+    padding: 3rem;
+    border-right: 2px solid #eee;
+
+    background-color: #fbfbfb;
+    }
+
+    .menu--show-menu {
+        display: block;
+    }
+
+    .menu__item{
+        display: block;
+        line-height: 3;
+    }
+
+    .menu__item--botao {
+        margin-top: 3.3rem;
+    }   
+}
+
+@media (min-width: 992px){
+    .menu__item{
+        display: inline-block;
+        padding-right: 3rem;
+    }
+
+    .menu__item:last-of-type {
+        padding-right: 0;
+    }
+}
+
+/*--------------------*\
+  TITULO-FORMULARIO
+\*--------------------*/
+.titulo-formulario {
+    margin: 0;
+    margin-bottom: 40px;
+    
+    border-bottom: 1px solid #ccc;
+  
+    font-size: 2.6rem;
+    font-weight: normal;
+    color: #004b86;
+}
+
+/*--------------------*\
+  GRUPO-ENTRADA
+\*--------------------*/
+.grupo-entrada {
+    margin-bottom: 2rem;
+}
+  
+.grupo-entrada > label {
+    display: block;
+  
+    font-weight: bold;
+}
+
+/*--------------------*\
+    CAMPO
+\*--------------------*/
+.campo {
+    display: block;
+    width: 100%;
+    height: 3.6rem;
+
+    padding: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 1.6rem;
+}

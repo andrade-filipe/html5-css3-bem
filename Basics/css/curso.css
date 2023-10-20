@@ -1,0 +1,83 @@
+/*
+fibonacci: 55, 34, 21, 13, 8
+Anotações 1
+.caixa1 {
+    background-color: beige;
+    color: grey;
+}
+
+.caixa2 {
+    background-color: rgb(255, 0, 120);
+    color: rgb(255, 255, 255);
+}
+
+.caixa3 {
+    background-color: #00FFFF;
+    color: #000;
+}
+
+.nome{
+    font-size: 32px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
+    font: italic bold 36px 'Trebuchet MS',sans-serif;
+
+    text-decoration: underline;
+    text-align: center;
+}
+Anotações 2
+body {
+    font-size: 32px;
+    scroll-behavior: smooth;
+  }
+  
+  .nome-empresa {
+    background-color: pink;
+  }
+  
+  .segmento-empresa {
+    background-color: red;
+  }
+  
+  .curso-html {
+    background-color: #00dd00;
+  }
+  
+  .curso-css {
+    background-color: #fdff11;
+  }
+  
+  .curso-java {
+    background-color: #00dddd;
+  }
+  
+  .curso-bootstrap {
+    background-color: #ee00da;
+  }
+
+  .nome-empresa, .segmento-empresa{
+    display: block;
+  }
+
+  .curso-css, .curso-html, .curso-java, .curso-bootstrap {
+    display: inline-block;
+  }
+  */
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 32px;
+    margin: 0;
+}
+p {
+    text-align: justify;
+    width: 500px;
+    border: 10px solid red;
+    background-color: yellow;
+
+    padding: 24px;
+    margin: 0;
+}
